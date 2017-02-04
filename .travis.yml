@@ -10,3 +10,6 @@ jdk:
 #  apt:
 #    packages:
 #      - oracle-java8-installer
+
+after_success:
+  - mvn jacoco:report coveralls:report

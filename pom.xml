@@ -71,13 +71,39 @@
             <artifactId>spring-restdocs-mockmvc</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
+
+    <developers>
+        <developer>
+            <name>Maystrovyy Volodymyr</name>
+            <email>maystrovyy@gmail.com</email>
+        </developer>
+    </developers>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.2.201409121644</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
             </plugin>
         </plugins>
     </build>
