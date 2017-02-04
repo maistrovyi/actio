@@ -6,7 +6,7 @@
     <groupId>com.actio</groupId>
     <artifactId>actio</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>actio</name>
     <description>Actio</description>
@@ -81,6 +81,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
