@@ -1,6 +1,6 @@
-package com.actio.repositories;
+package com.actio.repositories.b2b;
 
-import com.actio.models.Event;
+import com.actio.models.b2b.Event;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

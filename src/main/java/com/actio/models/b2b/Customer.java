@@ -1,28 +1,26 @@
-package com.actio.models;
+package com.actio.models.b2b;
 
+import com.actio.models.common.AbstractUser;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Getter
 @Setter
 @Builder(builderMethodName = "of", buildMethodName = "create")
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = true)
 @ToString
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name = "CUSTOMER")
-public class Customer implements Serializable {
-
-    private static final long serialVersionUID = -4733624093341899333L;
+public final class Customer extends AbstractUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PLACE_ID")
+    @Column(name = "CUSTOMER_ID")
     private Long id;
 
 }

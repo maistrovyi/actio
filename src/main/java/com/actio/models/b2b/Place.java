@@ -1,4 +1,4 @@
-package com.actio.models;
+package com.actio.models.b2b;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
@@ -16,7 +16,7 @@ import java.io.Serializable;
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name = "PLACE")
-public class Place implements Serializable {
+public final class Place implements Serializable {
 
     private static final long serialVersionUID = -6796867355867404250L;
 
@@ -25,5 +25,18 @@ public class Place implements Serializable {
     @Column(name = "PLACE_ID")
     private Long id;
 
+    @Column(name = "NAME")
+    private String name;
+
+    @Column(name = "LATITUDE")
+    private Double latitude;
+
+    @Column(name = "LONGTITUDE")
+    private Double longtitude;
+
+    @Column(name = "ADDRESS")
+    private String address;
+
+    private Customer customer;
 
 }

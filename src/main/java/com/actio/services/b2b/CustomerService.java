@@ -1,4 +1,4 @@
-package com.actio.services;
+package com.actio.services.b2b;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
