@@ -1,3 +1,4 @@
+/*
 package com.actio.models.common;
 
 import lombok.*;
@@ -46,3 +47,4 @@ public final class Role implements Serializable {
     }
 
 }
+*/

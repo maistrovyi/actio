@@ -1,3 +1,4 @@
+/*
 package com.actio.models.b2b;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -53,3 +54,4 @@ public final class Event implements Serializable {
     private Double price;
 
 }
+*/

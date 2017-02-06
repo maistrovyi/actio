@@ -1,3 +1,4 @@
+/*
 package com.actio.models.b2b;
 
 import com.actio.models.common.AbstractUser;
@@ -24,3 +25,4 @@ public final class Customer extends AbstractUser {
     private Long id;
 
 }
+*/
