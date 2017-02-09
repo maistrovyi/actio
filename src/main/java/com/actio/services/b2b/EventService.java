@@ -1,3 +1,4 @@
+/*
 package com.actio.services.b2b;
 
 import com.actio.repositories.b2b.EventRepository;
@@ -16,3 +17,4 @@ public class EventService {
 
 
 }
+*/

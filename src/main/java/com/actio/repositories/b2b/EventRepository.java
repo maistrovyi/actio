@@ -1,3 +1,4 @@
+/*
 package com.actio.repositories.b2b;
 
 import com.actio.models.b2b.Event;
@@ -8,3 +9,4 @@ import org.springframework.stereotype.Repository;
 public interface EventRepository extends JpaRepository<Event, Long> {
 
 }
+*/

@@ -28,15 +28,13 @@ public final class Place implements Serializable {
     @Column(name = "NAME")
     private String name;
 
-    @Column(name = "LATITUDE")
-    private Double latitude;
-
     @Column(name = "LONGTITUDE")
     private Double longtitude;
 
+    @Column(name = "LATITUDE")
+    private Double latitude;
+
     @Column(name = "ADDRESS")
     private String address;
-
-    private Customer customer;
 
 }

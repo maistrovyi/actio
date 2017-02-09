@@ -1,3 +1,4 @@
+/*
 package com.actio.repositories.b2c;
 
 import com.actio.models.b2c.User;
@@ -8,3 +9,4 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 }
+*/

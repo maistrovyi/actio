@@ -1,3 +1,4 @@
+/*
 package com.actio.models.common;
 
 import lombok.*;
@@ -60,3 +61,4 @@ public abstract class AbstractUser implements Serializable {
     private Role role;
 
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.actio.models.b2c;
 
 import com.actio.models.common.AbstractUser;
@@ -20,7 +21,8 @@ public final class User extends AbstractUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "CUSTOMER_ID")
+    @Column(name = "USER_ID")
     private Long id;
 
 }
+*/

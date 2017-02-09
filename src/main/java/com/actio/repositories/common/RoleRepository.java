@@ -1,3 +1,4 @@
+/*
 package com.actio.repositories.common;
 
 import com.actio.models.common.Role;
@@ -8,3 +9,4 @@ import org.springframework.stereotype.Repository;
 public interface RoleRepository extends JpaRepository<Role, Long> {
 
 }
+*/
