@@ -1,6 +1,7 @@
 package com.actio.models.b2b;
 
 import com.actio.repositories.b2b.PlaceRepository;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ public class PlaceTest {
 
     @Test
     @Rollback(value = false)
+    @Ignore
     public void test_onSuccessfullySavedPlace() {
         placeRepository.save(Place.of()
                 .name("Home")
