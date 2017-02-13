@@ -1,4 +1,3 @@
-/*
 package com.actio.models.b2b;
 
 import com.actio.models.common.AbstractUser;
@@ -9,20 +8,22 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Builder(builderMethodName = "of", buildMethodName = "create")
 @NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString
-@Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Entity
 @Table(name = "CUSTOMER")
-public final class Customer extends AbstractUser {
+public final class Employee extends AbstractUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CUSTOMER_ID")
     private Long id;
 
+    @Builder(builderMethodName = "of", buildMethodName = "create")
+    public Employee(String firstName, String lastName, String login) {
+        super(firstName, lastName, login);
+    }
+
 }
-*/
