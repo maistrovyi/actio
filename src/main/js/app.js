@@ -8,26 +8,26 @@ class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {employees: []};
+		this.state = {customers: []};
 	}
 
 	componentDidMount() {
-		client({method: 'GET', path: '/api/employees'}).done(response => {
-			this.setState({employees: response.entity._embedded.employees});
+		client({method: 'GET', path: '/api/customers'}).done(response => {
+			this.setState({customers: response.entity._embedded.customers});
 		});
 	}
 
 	render() {
 		return (
-			<EmployeeList employees={this.state.employees}/>
+			<CustomerList customers={this.state.customers}/>
 		)
 	}
 }
 
-class EmployeeList extends React.Component{
+class CustomerList extends React.Component{
 	render() {
-		var employees = this.props.employees.map(employee =>
-			<Employee key={employee._links.self.href} employee={employee}/>
+		var customers = this.props.customers.map(customer =>
+			<Customer key={customer._links.self.href} customer={customer}/>
 		);
 		return (
 			<table>
@@ -37,20 +37,20 @@ class EmployeeList extends React.Component{
 						<th>Last Name</th>
 						<th>Login</th>
 					</tr>
-					{employees}
+					{customers}
 				</tbody>
 			</table>
 		)
 	}
 }
 
-class Employee extends React.Component{
+class Customer extends React.Component{
 	render() {
 		return (
 			<tr>
-				<td>{this.props.employee.firstName}</td>
-				<td>{this.props.employee.lastName}</td>
-				<td>{this.props.employee.login}</td>
+				<td>{this.props.customer.firstName}</td>
+				<td>{this.props.customer.lastName}</td>
+				<td>{this.props.customer.login}</td>
 			</tr>
 		)
 	}
