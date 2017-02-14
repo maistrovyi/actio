@@ -14,7 +14,7 @@ import javax.persistence.*;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
 @Table(name = "CUSTOMER")
-public final class Employee extends AbstractUser {
+public final class Customer extends AbstractUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public final class Employee extends AbstractUser {
     private Long id;
 
     @Builder(builderMethodName = "of", buildMethodName = "create")
-    public Employee(String firstName, String lastName, String login) {
+    public Customer(String firstName, String lastName, String login) {
         super(firstName, lastName, login);
     }
 
