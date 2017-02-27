@@ -1,0 +1,26 @@
+# ===================================================================
+# Spring Boot configuration for the "prod" profile.
+#
+# This configuration overrides the application-prod.yml file.
+# ===================================================================
+
+spring:
+  profiles: prod
+  datasource:
+      platform: postgres
+      url: jdbc:postgresql://$heroku_ip:$heroku_port/actio?autoReconnect=true&useSSL=false
+      username: $herokuUserName
+      password: $herokuPassword
+      driver-class-name: org.postgresql.Driver
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: create-drop
+  data:
+    mongodb:
+      name: eat
+      net:
+        bindIp: $heroku_ip
+        port: $heroku_port
+server:
+    port: 8080

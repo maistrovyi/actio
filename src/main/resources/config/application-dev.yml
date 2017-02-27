@@ -1,0 +1,44 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application-dev.yml file.
+# ===================================================================
+
+spring:
+    profiles: dev
+    devtools:
+        restart:
+            enabled: false
+            livereload:
+                enabled: false
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        hikari:
+            data-source-class-name: org.postgresql.ds.PGSimpleDataSource
+            jdbc-url: jdbc:postgresql://localhost:5432/actio?autoReconnect=true&useSSL=false
+            username: postgres
+            password: root
+#            idle-timeout: 10000
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop
+#        properties:
+#            hibernate.cache.use_second_level_cache: true
+#            hibernate.cache.use_query_cache: false
+#            hibernate.generate_statistics: false
+#            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+    data:
+        mongodb:
+            name: eat
+            net:
+                bindIp: 127.0.0.1
+                port: 27017
+            setParameter:
+                enableLocalhostAuthBypass: false
+server:
+    port: 8080
+    compression:
+        enabled: true
+        mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+        min-response-size: 1024
