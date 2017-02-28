@@ -1,6 +1,6 @@
 package com.actio.models.b2b;
 
-import com.actio.repositories.b2b.PlaceRepository;
+import com.actio.repositories.sql.b2b.PlaceRepository;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;

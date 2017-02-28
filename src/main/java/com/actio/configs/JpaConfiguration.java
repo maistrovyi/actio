@@ -13,7 +13,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "com.actio.repositories")
+@EnableJpaRepositories(basePackages = "com.actio.repositories.sql")
 //@EnableJpaAuditing
 public class JpaConfiguration extends HikariConfig {
 

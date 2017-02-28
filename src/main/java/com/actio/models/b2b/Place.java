@@ -15,7 +15,7 @@ import java.io.Serializable;
 @ToString
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Table(name = "PLACE")
+@Table(name = "place")
 public final class Place implements Serializable {
 
     private static final long serialVersionUID = -6796867355867404250L;

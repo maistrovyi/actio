@@ -24,5 +24,4 @@ public final class User extends AbstractUser {
     @Column(name = "USER_ID")
     private Long id;
 
-}
-*/
+}*/

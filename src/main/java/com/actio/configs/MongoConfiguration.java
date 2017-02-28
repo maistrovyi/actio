@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "com.actio.repositories")
+@EnableMongoRepositories(basePackages = "com.actio.repositories.mongo")
 public class MongoConfiguration extends AbstractMongoConfiguration {
 
     @Value(value = "${spring.data.mongodb.name}")

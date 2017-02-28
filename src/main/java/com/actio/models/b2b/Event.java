@@ -21,7 +21,7 @@ import java.time.LocalDateTime;
 @ToString
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Table(name = "EVENT")
+@Table(name = "event")
 public final class Event implements Serializable {
 
     private static final long serialVersionUID = -6519831483233658565L;
@@ -47,11 +47,12 @@ public final class Event implements Serializable {
     @Column(name = "EXPIRATION_DATE")
     private LocalDateTime expirationDate;
 
-    private Place place;
+    */
+/*private Place place;
 
     private Customer organizer;
 
-    private Double price;
+    private Double price;*//*
 
-}
-*/
+
+}*/
