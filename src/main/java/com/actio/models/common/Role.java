@@ -1,8 +1,6 @@
-/*
 package com.actio.models.common;
 
 import lombok.*;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -14,7 +12,7 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode
 @Entity
-@Table(name = "ROLE")
+@Table(name = "role")
 public final class Role implements Serializable {
 
     private static final long serialVersionUID = -7383317484452637847L;
@@ -47,4 +45,3 @@ public final class Role implements Serializable {
     }
 
 }
-*/

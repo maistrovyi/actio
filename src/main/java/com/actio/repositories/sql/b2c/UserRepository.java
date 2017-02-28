@@ -1,5 +1,5 @@
 /*
-package com.actio.repositories.b2c;
+package com.actio.repositories.sql.b2c;
 
 import com.actio.models.b2c.User;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -18,7 +18,6 @@ spring:
             jdbc-url: jdbc:postgresql://localhost:5432/actio?autoReconnect=true&useSSL=false
             username: postgres
             password: root
-#            idle-timeout: 10000
     jpa:
         show-sql: true
         hibernate:
@@ -30,7 +29,7 @@ spring:
 #            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
     data:
         mongodb:
-            name: eat
+            name: actio
             net:
                 bindIp: 127.0.0.1
                 port: 27017

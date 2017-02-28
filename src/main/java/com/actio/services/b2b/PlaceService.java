@@ -1,7 +1,7 @@
 package com.actio.services.b2b;
 
 import com.actio.models.b2b.Place;
-import com.actio.repositories.b2b.PlaceRepository;
+import com.actio.repositories.sql.b2b.PlaceRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
