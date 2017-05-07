@@ -32,3 +32,6 @@ mvnw
 .mvn/wrapper/maven-wrapper.jar
 
 mvnw.cmd
+
+node_modules/
+src/main/resources/static/built/
