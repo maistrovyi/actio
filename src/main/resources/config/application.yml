@@ -6,31 +6,33 @@
 # ===================================================================
 
 spring:
-    application:
-        name: actio
-    profiles:
-        active: dev
-    jackson:
-        serialization.write_dates_as_timestamps: false
-#    jpa:
+  application:
+    name: actio
+  profiles:
+    active: dev
+  jackson:
+    serialization.write_dates_as_timestamps: false
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 #        open-in-view: false
 #        hibernate:
 #            ddl-auto: none
 #            naming:
 #                strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
-    messages:
-        basename: i18n/messages
-    data:
-      rest:
-        base-path: /api
-    thymeleaf:
-      cache: false
+  messages:
+    basename: i18n/messages
+  data:
+    rest:
+      base-path: /api
+  thymeleaf:
+    cache: false
 
 security:
-    basic:
-        enabled: false
+  basic:
+    enabled: false
 
 server:
-    session:
-        cookie:
-            http-only: true
+  session:
+    cookie:
+      http-only: true
